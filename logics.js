@@ -63,6 +63,8 @@ const readData = async (reader, protocol, withPhoto, callback) => {
       data.gender = 'other' 
     }
 
+    data.rawAddress = rawAddress
+    
     const tempAddress = rawAddress.split(' ').filter(o => o !== '')
     data.address = tempAddress.join(' ')
 
