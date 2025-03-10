@@ -18,7 +18,8 @@ const hex2string = (input) => {
     }
     str += tmp
   }
-  str = str.replace(/#/g, ' ')
+
+  //str = str.replace(/#/g, ' ')
   return str
 }
 
